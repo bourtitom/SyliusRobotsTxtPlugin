@@ -11,10 +11,11 @@ Manage your robots.txt from your Sylius admin pannel
 
 ## Compatibility
 
-| Sylius Version | PHP Version |
-|---|---|
-| 1.12 | 8.1 - 8.2 |
-| 1.13 | 8.1 - 8.2 |
+| Sylius Version | PHP Version     |
+|----------------|-----------------|
+| 1.12           | 8.1 - 8.2 - 8.3 |
+| 1.13           | 8.1 - 8.2 - 8.3 |
+| 1.14           | 8.1 - 8.2 - 8.3 |
 
 ## Installation
 
