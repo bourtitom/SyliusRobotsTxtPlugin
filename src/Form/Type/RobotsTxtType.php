@@ -32,5 +32,15 @@ final class RobotsTxtType extends AbstractSettingsType implements SettingsTypeIn
                 'required' => false,
             ]
         );
+
+        $this->addWithDefaultCheckbox(
+            $builder,
+            'llms_txt_content',
+            TextareaType::class,
+            [
+                'label' => 'monsieurbiz_robots_txt.form.llms_txt_content',
+                'required' => false,
+            ]
+        );
     }
 }
