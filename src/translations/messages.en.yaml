@@ -4,8 +4,5 @@ monsieurbiz_robots_txt:
         llms_txt_content: 'LLMs Txt content'
     settings:
         robots_txt:
-            plugin_name: Robots Txt
-            description: Edit your robots.txt file
-        llms_txt:
-            plugin_name: LLMs Txt
-            description: Edit your LLMs.txt file
+            plugin_name: Robots & LLMs Txt
+            description: Edit your robots.txt and llms.txt files
