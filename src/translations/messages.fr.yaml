@@ -1,7 +1,11 @@
 monsieurbiz_robots_txt:
     form:
         robots_txt_content: 'Contenu du Robots Txt'
+        llms_txt_content: 'Contenu du LLMs Txt'
     settings:
         robots_txt:
             plugin_name: Robots Txt
             description: Editez votre fichier robots.txt
+        llms_txt:
+            plugin_name: LLMs Txt
+            description: Editez votre fichier LLMs.txt
