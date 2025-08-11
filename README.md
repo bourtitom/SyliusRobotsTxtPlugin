@@ -64,12 +64,13 @@ monsieurbiz_robots_txt_render:
     methods: [ GET ]
     defaults:
         _controller: MonsieurBiz\SyliusRobotsTxtPlugin\Controller\RenderController
-
+        settingName: 'robots_txt_content'
 monsieurbiz_llms_txt_render:
     path: /llms.txt
     methods: [ GET ]
     defaults:
-        _controller: MonsieurBiz\SyliusRobotsTxtPlugin\Controller\LlmsController
+        _controller: MonsieurBiz\SyliusRobotsTxtPlugin\Controller\RenderController
+        settingName: 'llms_txt_content'
 ```
 
 </p>
