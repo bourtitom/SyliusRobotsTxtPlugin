@@ -14,7 +14,4 @@ monsieurbiz_sylius_settings:
                     Disallow:
                 llms_txt_content: |                    
                     User-agent: *
-                    Allow: /
-                    
-                    Crawl-delay: 2
-                    Respect-copyright: true
+                    Disallow:
