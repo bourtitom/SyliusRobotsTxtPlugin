@@ -30,11 +30,8 @@ final class MonsieurBizSyliusRobotsTxtExtension extends Extension
         $loader->load('services.yaml');
     }
 
-    /**
-     * @inheritdoc
-     */
     public function getAlias(): string
     {
-        return 'monsieur_biz_sylius_robots_txt';
+        return str_replace('monsieur_biz', 'monsieurbiz', parent::getAlias());
     }
 }
