@@ -12,3 +12,6 @@ monsieurbiz_sylius_settings:
                 robots_txt_content: |
                     User-agent: *
                     Disallow:
+                llms_txt_content: |                    
+                    User-agent: *
+                    Disallow:

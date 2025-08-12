@@ -22,21 +22,22 @@ final class RenderController extends AbstractController
     public function __invoke(
         SettingsInterface $robotstxtSettings,
         ChannelContextInterface $channelContext,
+        string $settingName
     ): Response {
-        $robotsTxtContent = $robotstxtSettings->getCurrentValue(
+        $settingContent = $robotstxtSettings->getCurrentValue(
             $channelContext->getChannel(),
             null,
-            'robots_txt_content'
+            $settingName
         );
 
-        Assert::string($robotsTxtContent);
-        $robotsTxtContent = trim($robotsTxtContent);
+        Assert::string($settingContent);
+        $settingContent = trim($settingContent);
 
-        if (empty($robotsTxtContent)) {
+        if (empty($settingContent)) {
             throw $this->createNotFoundException();
         }
 
-        return new Response($robotsTxtContent, Response::HTTP_OK, [
+        return new Response($settingContent, Response::HTTP_OK, [
             'Content-Type' => 'text/plain',
         ]);
     }

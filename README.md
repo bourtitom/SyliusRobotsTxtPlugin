@@ -1,11 +1,11 @@
-<h1 align="center">Sylius Robots TXT</h1>
+<h1 align="center">Sylius Robots TXT & LLMs TXT</h1>
 
 [![Robots TXT Plugin license](https://img.shields.io/github/license/monsieurbiz/SyliusRobotsTxtPlugin?public)](https://github.com/monsieurbiz/SyliusRobotsTxtPlugin/blob/master/LICENSE.txt)
 [![Tests Status](https://img.shields.io/github/actions/workflow/status/monsieurbiz/SyliusRobotsTxtPlugin/tests.yaml?branch=master&logo=github)](https://github.com/monsieurbiz/SyliusRobotsTxtPlugin/actions?query=workflow%3ATests)
 [![Recipe Status](https://img.shields.io/github/actions/workflow/status/monsieurbiz/SyliusRobotsTxtPlugin/recipe.yaml?branch=master&label=recipes&logo=github)](https://github.com/monsieurbiz/SyliusRobotsTxtPlugin/actions?query=workflow%3ASecurity)
 [![Security Status](https://img.shields.io/github/actions/workflow/status/monsieurbiz/SyliusRobotsTxtPlugin/security.yaml?branch=master&label=security&logo=github)](https://github.com/monsieurbiz/SyliusRobotsTxtPlugin/actions?query=workflow%3ASecurity)
 
-Manage your robots.txt from your Sylius admin pannel
+Manage your robots.txt and llms.txt from your Sylius admin pannel
 
 ![Demo of the settings form to manage robots.txt content](docs/images/demo.jpg)
 
@@ -64,6 +64,13 @@ monsieurbiz_robots_txt_render:
     methods: [ GET ]
     defaults:
         _controller: MonsieurBiz\SyliusRobotsTxtPlugin\Controller\RenderController
+        settingName: 'robots_txt_content'
+monsieurbiz_llms_txt_render:
+    path: /llms.txt
+    methods: [ GET ]
+    defaults:
+        _controller: MonsieurBiz\SyliusRobotsTxtPlugin\Controller\RenderController
+        settingName: 'llms_txt_content'
 ```
 
 </p>
