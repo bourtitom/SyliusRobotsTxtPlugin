@@ -31,7 +31,7 @@ final class RenderController extends AbstractController
         );
 
         Assert::string($settingContent);
-        $robotsTxtContent = trim($settingContent);
+        $settingContent = trim($settingContent);
 
         if (empty($settingContent)) {
             throw $this->createNotFoundException();
