@@ -10,7 +10,7 @@ export MIGRATIONS_NAMESPACE=MonsieurBiz\\SyliusRobotsTxtPlugin\\Migrations
 export USER_UID=$(shell id -u)
 PLUGIN_NAME=sylius-${COMPOSE_PROJECT_NAME}-plugin
 COMPOSE=docker compose
-YARN=$$(command -v n >/dev/null 2>&1 && echo "n --download exec auto yarn" || echo "yarn")
+YARN=yarn
 
 ###
 ### DEVELOPMENT
