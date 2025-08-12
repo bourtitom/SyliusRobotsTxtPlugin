@@ -26,7 +26,7 @@ final class MonsieurBizSyliusRobotsTxtExtension extends Extension
      */
     public function load(array $config, ContainerBuilder $container): void
     {
-        $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
+        $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../../config'));
         $loader->load('services.yaml');
     }
 
@@ -35,6 +35,6 @@ final class MonsieurBizSyliusRobotsTxtExtension extends Extension
      */
     public function getAlias(): string
     {
-        return 'monsieurbiz_robots_txt';
+        return 'monsieur_biz_sylius_robots_txt';
     }
 }
